@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   await mongoose
-    .connect("mongodb://localhost:27019/my-app")
+    .connect("mongodb+srv://mongodb:mongodb@mycluster.cq58k.mongodb.net/?retryWrites=true&w=majority&appName=MyCluster")
     .then(() => console.log("DB Connected"))
     .catch((err) => console.error("DB Connection Error: ", err));
 };
