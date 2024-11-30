@@ -159,7 +159,7 @@ const Register = () => {
     setLoading(true); 
     try {
       const response = await axios.post(
-        "https://dashboard-backend-rhfy.onrender.com/api/auth/createUser",
+        "https://backend-zghv.onrender.com/api/auth/createUser",
         formData
       );
 
